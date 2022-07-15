@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>User Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex flex-col mt-8">
+      <form
+        id="user-form"
+        class="mx-auto bg-gray-300 w-1/3 p-5 border border-gray-200 rounded-md"
+      >
+        <div class="flex flex-col mt-3">
+          <label for="name"
+            >Name<span class="font-bold text-orange-600">*</span></label
+          >
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter Name"
+            class="border border-gray-400 rounded-md text-xl p-2 mt-1"
+            required
+          />
+        </div>
+        <div class="flex flex-col mt-3">
+          <label for="name"
+            >Email<span class="font-bold text-orange-600">*</span></label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Email"
+            class="border border-gray-400 rounded-md text-xl p-2 mt-1"
+            required
+          />
+        </div>
+
+        <div class="flex flex-col mt-3">
+          <label for="name"
+            >Password<span class="font-bold text-orange-600">*</span></label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter Password"
+            class="border border-gray-400 rounded-md text-xl p-2 mt-1"
+            required
+          />
+        </div>
+
+        <div class="flex flex-col mt-3">
+          <label for="name"
+            >Date of birth<span class="font-bold text-orange-600"
+              >*</span
+            ></label
+          >
+          <input
+            type="date"
+            id="dob"
+            name="dob"
+            class="border border-gray-400 rounded-md text-xl p-2 mt-2"
+            required
+          />
+        </div>
+
+        <div class="flex space-x-2 items-center mt-10">
+          <input
+            type="checkbox"
+            id="acceptTerms"
+            name="acceptTerms"
+            class="w-5 h-5"
+          />
+          <label for="name">Accept Terms and Conditions</label>
+        </div>
+
+        <button
+          type="submit"
+          class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded mt-3 mr-5"
+        >
+          Add
+        </button>
+        <button
+          type="reset"
+          class="bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded mt-3"
+        >
+          Reset
+        </button>
+      </form>
+    </div>
+    <div class="mx-20 mb-10">
+      <h2 class="text-2xl font-bold mb-5 text-center">Entries</h2>
+      <div id="user-entries"></div>
+    </div>
+    <script src="./form.js"></script>
+  </body>
+</html>
